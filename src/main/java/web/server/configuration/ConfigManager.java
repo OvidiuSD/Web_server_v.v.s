@@ -29,7 +29,7 @@ public class ConfigManager {
         } catch (FileNotFoundException e) {
             throw new ServerConfigException(e);
         }
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder buffer = new StringBuilder();
         int i;
         try {
             while ((i = fileReader.read()) != -1) {
@@ -47,13 +47,13 @@ public class ConfigManager {
         try {
             myCurrentConfiguration = Json.fromJson(config, Config.class);
         } catch (JsonProcessingException e) {
-            throw new ServerConfigException("ERROR PARSING CONFIG INTERNAL");
+            throw new ServerConfigException("ERROR PARSING CONFIG FILE INTERNAL");
         }
     }
 
     public Config getCurrentConfiguration() {
         if (myCurrentConfiguration == null) {
-            throw new ServerConfigException("NO CURRENT CONFIGURATION WAS SET");
+            throw new ServerConfigException("NO CURRENT CONFIGURATION WAS SETED");
         }
         return myCurrentConfiguration;
     }
