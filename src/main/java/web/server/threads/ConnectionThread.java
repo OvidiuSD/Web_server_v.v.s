@@ -25,7 +25,7 @@ public class ConnectionThread extends Thread{
             inputStream = socket.getInputStream();
             outputStream = socket.getOutputStream();
 
-            String html = "<html><head><title>Web Server </title></head><body><h1>Content of WEB SERVER</h1></body></html>";
+            String html = "<html><head><title>Web Server Ovidiu</title></head><body><h1>Content of WEB SERVER</h1></body></html>";
             final String CRLF = "\r\n"; //13,10
             String response =
                     "HTTP/1.1 200 OK" + CRLF +

@@ -12,6 +12,8 @@ public class Server {
     private final static Logger LOGGER = LoggerFactory.getLogger(Server.class);
 
     public static void main(String[] args) {
+
+
         LOGGER.info("SERVER STARTING...");
         ConfigManager.getInstance().loadConfigurationFile("src/main/resources/http.json");
         Config config = ConfigManager.getInstance().getCurrentConfiguration();
@@ -21,11 +23,13 @@ public class Server {
 
         try {
             ServerThread serverListenerThread = new ServerThread(config.getPort(), config.getWebRoot());
+
             serverListenerThread.start();
         } catch (
                 IOException e) {
             e.printStackTrace();
         }
+
     }
 }
 
