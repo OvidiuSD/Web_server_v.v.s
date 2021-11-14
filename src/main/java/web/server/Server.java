@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import web.server.configuration.Config;
 import web.server.configuration.ConfigManager;
-import web.server.threads.ServerThread;
+import web.server.threads.SrvThread;
 
 import java.io.IOException;
 
@@ -22,7 +22,7 @@ public class Server {
 
 
         try {
-            ServerThread serverListenerThread = new ServerThread(config.getPort(), config.getWebRoot());
+            SrvThread serverListenerThread = new SrvThread(config.getPort(), config.getWebRoot());
 
             serverListenerThread.start();
         } catch (

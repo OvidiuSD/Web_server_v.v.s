@@ -2,7 +2,7 @@ package web.server.configuration;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import web.server.json.Json;
+import web.server.utiljson.Json;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

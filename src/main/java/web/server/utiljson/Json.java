@@ -1,4 +1,4 @@
-package web.server.json;
+package web.server.utiljson;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.*;
 public class Json {

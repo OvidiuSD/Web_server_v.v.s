@@ -7,13 +7,13 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ServerThread extends Thread{
+public class SrvThread extends Thread{
     private int port;
     private String webroot;
     private ServerSocket serverSocket;
-    private final static Logger LOGGER = LoggerFactory.getLogger(ServerThread.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(SrvThread.class);
 
-    public ServerThread(int port, String webroot) throws IOException {
+    public SrvThread(int port, String webroot) throws IOException {
         this.port = port;
         this.webroot = webroot;
         this.serverSocket = new ServerSocket(this.port);
