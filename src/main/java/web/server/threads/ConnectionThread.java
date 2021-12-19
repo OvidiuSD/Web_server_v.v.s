@@ -32,7 +32,7 @@ public class ConnectionThread extends Thread{
                     "<h2>Development of project: </h2>" +
                     "<p> The project was developed in 3 phases:</p>" +
                     "<ol>"+
-                    "<li><em> server implementation + unit tests -> <strong> week 6 </strong></em></li>" +
+                    "<li><em> server implementation + unit tests -> <strong> week 7 </strong></em></li>" +
                     "<li><em> static + dynamic analyses (profiling) reports -> <strong> week 9 </strong></em></li>" +
                     "<li><em> graphical interface implementation + graphical user interface testing + web testing -> <strong>week 13 </strong></em></li>"+
                     "</ol>"+
