@@ -2,6 +2,7 @@ package web.server;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import web.server.GUI.GraphicUI;
 import web.server.configuration.Config;
 import web.server.configuration.ConfigManager;
 import web.server.threads.SrvThread;
@@ -13,6 +14,7 @@ public class Server {
 
     public static void main(String[] args) {
 
+        GraphicUI GUI = new GraphicUI();
 
         LOGGER.info("SERVER STARTING...");
         ConfigManager.getInstance().loadConfigurationFile("src/main/resources/http.json");
